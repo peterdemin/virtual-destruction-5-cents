@@ -1,7 +1,8 @@
 virtual-destruction-5-cents
 ===========================
 
-My 5 cents to C++ virtual destructors (Examples)
+Overview
+--------
 
 ```cucumber
 Scenario 1:
@@ -56,4 +57,13 @@ And Derived class has one more dynamic member
 When you delete derived class by pointer to base class (e.g. Base *pb = Derived(); delete pb;)
 Then Derived's destructor isn't called
 And new member leaks memory.
+```
+
+How to build
+------------
+
+```shell
+mkdir build
+cd build
+cmake ..
 ```
